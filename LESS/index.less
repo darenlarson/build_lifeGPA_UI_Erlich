@@ -32,7 +32,11 @@ body {
     grid-template-rows: 100px 1fr;
 
     @media @phone {
-      background-image: url("../assets/headerImage.jpg");
+      //background-image: url("../assets/header-phone.jpg");
+      width: auto;
+      height: 100vh;
+      background-size: cover;
+      background-repeat: no-repeat;
     }
 
     .navigation {
@@ -43,10 +47,21 @@ body {
       justify-content: space-between;
       margin: 0 10%;
       color: white;
+
+      @media @phone {
+        margin-top: 1%;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+      }
   
       h1 {
         font-size: 3rem;
         color: @lifePink;
+
+        @media @phone {
+          font-size: 2.5rem;
+        }
       } 
   
       nav {
@@ -56,12 +71,17 @@ body {
         align-items: center;
         font-size: 1.8rem;
   
+        @media @phone {
+          font-size: 1.5rem;
+          border-top: 1px solid white;
+        }
+
         a {
           margin-right: 10%;
-        }
+          }
   
         button {
-          margin-left: 15%;
+          margin-left: 35%;
           border-radius: 6px;
           border: 2px solid white;
           background-color: inherit;
@@ -69,6 +89,10 @@ body {
           font-size: 1.6rem;
           height: 32px;
           color: white;
+
+          @media @phone {
+            font-size: 1.4rem;
+          }
         }
       }
     } //navigation   
@@ -83,10 +107,22 @@ body {
       align-items: flex-start;
       flex-direction: column;
 
+      @media @phone {
+        align-items: center;
+        justify-content: center;
+        padding-bottom: 10%;
+      }
+
       h1 {
         font-size: 8rem;
         padding-top: 4%;
         padding-bottom: 2%;
+
+        @media @phone {
+          font-size: 6.5rem;
+          text-align: center;
+          padding-bottom: 10%;
+        }
       }
 
       button {
