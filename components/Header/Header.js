@@ -1,10 +1,8 @@
-const title = document.querySelector(".header-left-content h1");
-const subtitle = document.querySelector(".header-left-content h2");
-const titleImg = document.querySelector(".header-right-content img");
+const title = document.querySelector(".header-content h1");
+const headerBtn = document.querySelector(".header-content button");
 
+const timeTitle = 500;
 
-const timeTitle = 250;
-/*
 window.addEventListener("load", event => {
     if(mobile.matches) {
         title.classList.replace("hide-header", "show-navigation");
@@ -15,17 +13,8 @@ window.addEventListener("load", event => {
 
 window.addEventListener("load", event => {
     if(mobile.matches) {
-        subtitle.classList.replace("hide-header", "show-navigation");
+        headerBtn.classList.replace("hide-header", "show-navigation");
     } else {
-        setTimeout(() => subtitle.classList.replace("hide-header", "fade-in-top"), timeTitle)
+        setTimeout(() => headerBtn.classList.replace("hide-header", "roll-in-right"), timeTitle + 1200)
     }
 })
-
-window.addEventListener("load", event => {
-    if(mobile.matches) {
-        titleImg.classList.replace("hide-header", "fade-in-right");
-    } else {
-        setTimeout(() => titleImg.classList.replace("hide-header", "fade-in-right"), timeTitle + 500)
-    }
-})
-*/
