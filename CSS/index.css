@@ -188,12 +188,32 @@ body .content .achievements .achievement {
   color: black;
   margin-bottom: 2%;
 }
+@media (max-width: 500px) {
+  body .content .achievements .achievement {
+    width: 40%;
+  }
+}
 body .content .achievements .achievement img {
   height: 90px;
   width: auto;
 }
+@media (max-width: 500px) {
+  body .content .achievements .achievement img {
+    height: 70px;
+  }
+}
 body .content .achievements .achievement h1 {
   font-size: 5rem;
+}
+@media (max-width: 500px) {
+  body .content .achievements .achievement h1 {
+    font-size: 4rem;
+  }
+}
+@media (max-width: 500px) {
+  body .content .achievements .achievement h2 {
+    font-size: 1.6rem;
+  }
 }
 body .content .how-it-works {
   display: flex;
@@ -202,19 +222,42 @@ body .content .how-it-works {
   padding: 5% 0;
   background: whitesmoke;
 }
+@media (max-width: 500px) {
+  body .content .how-it-works {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
 body .content .how-it-works .hiw-left {
-  width: 50%;
+  width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
   border-right: 3px dotted black;
   color: black;
 }
+@media (max-width: 500px) {
+  body .content .how-it-works .hiw-left {
+    border-right: none;
+    border-bottom: 3px dotted black;
+    width: 85%;
+    justify-content: flex-start;
+  }
+}
 body .content .how-it-works .hiw-left h1 {
   width: 50%;
   font-size: 7rem;
   padding-left: 10%;
   line-height: 1;
+}
+@media (max-width: 500px) {
+  body .content .how-it-works .hiw-left h1 {
+    width: 100%;
+    font-size: 4rem;
+    padding-left: 0;
+    padding-bottom: 3%;
+  }
 }
 body .content .how-it-works .hiw-right {
   width: 50%;
@@ -223,12 +266,27 @@ body .content .how-it-works .hiw-right {
   justify-content: center;
   color: black;
 }
+@media (max-width: 500px) {
+  body .content .how-it-works .hiw-right {
+    width: 85%;
+    margin-top: 3%;
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+}
 body .content .how-it-works .hiw-right ol {
   width: 50%;
   display: flex;
   align-content: center;
   flex-direction: column;
   font-size: 2rem;
+}
+@media (max-width: 500px) {
+  body .content .how-it-works .hiw-right ol {
+    font-size: 2rem;
+    align-items: flex-start;
+    width: 100%;
+  }
 }
 body .content .phrase {
   background-image: url("../assets/champion.jpg");
@@ -237,11 +295,28 @@ body .content .phrase {
   height: 100vh;
   width: 100%;
 }
+@media (max-width: 500px) {
+  body .content .phrase {
+    width: auto;
+    display: flex;
+    justify-content: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+}
 body .content .phrase h1 {
   width: 70%;
   color: whitesmoke;
   font-size: 3.5rem;
   padding: 2% 10%;
+}
+@media (max-width: 500px) {
+  body .content .phrase h1 {
+    width: 85%;
+    font-size: 2rem;
+    text-align: center;
+    margin-top: 5%;
+  }
 }
 body .content footer {
   padding: 2% 0;
