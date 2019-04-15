@@ -58,6 +58,11 @@ body header {
   grid-template-columns: 1fr;
   grid-template-rows: 100px 1fr;
 }
+@media (max-width: 500px) {
+  body header {
+    background-image: url("../assets/headerImage.jpg");
+  }
+}
 body header .navigation {
   height: 100px;
   display: flex;
@@ -69,6 +74,7 @@ body header .navigation {
 }
 body header .navigation h1 {
   font-size: 3rem;
+  color: #da7b93;
 }
 body header .navigation nav {
   width: 50%;
@@ -91,13 +97,29 @@ body header .navigation nav button {
   color: white;
 }
 body header .header-content {
-  font-size: 4rem;
   font-weight: bold;
   line-height: 1.2;
   margin: 0 10% 0 10%;
   color: white;
-  text-align: start;
   display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+}
+body header .header-content h1 {
+  font-size: 8rem;
+  padding-top: 4%;
+  padding-bottom: 2%;
+}
+body header .header-content button {
+  border-radius: 15px;
+  border: 2px solid #da7b93;
+  background-color: #da7b93;
+  padding: 0 40px;
+  font-size: 2.5rem;
+  height: 45px;
+  color: black;
+  font-weight: bold;
 }
 body .content {
   display: flex;
@@ -105,23 +127,25 @@ body .content {
   width: 100%;
 }
 body .content .achievements {
-  padding: 75px 0;
+  padding-top: 5%;
+  padding-bottom: 5%;
   width: 100%;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
-  background: #376e6f;
+  background: #da7b93;
 }
 body .content .achievements .achievement {
   text-align: center;
   line-height: 0.25;
   width: 18%;
-  border: 2px solid whitesmoke;
+  border: 2px solid black;
   border-radius: 5px;
-  margin: 0 2%;
+  margin: 2%;
   padding: 1% 0;
-  color: whitesmoke;
+  color: black;
+  margin-bottom: 2%;
 }
 body .content .achievements .achievement img {
   height: 90px;
@@ -142,8 +166,8 @@ body .content .how-it-works .hiw-left {
   display: flex;
   align-items: center;
   justify-content: center;
-  border-right: 3px dotted #2e151b;
-  color: #2e151b;
+  border-right: 3px dotted black;
+  color: black;
 }
 body .content .how-it-works .hiw-left h1 {
   width: 50%;
@@ -156,7 +180,7 @@ body .content .how-it-works .hiw-right {
   display: flex;
   align-items: center;
   justify-content: center;
-  color: #2e151b;
+  color: black;
 }
 body .content .how-it-works .hiw-right ol {
   width: 50%;
@@ -177,6 +201,15 @@ body .content .phrase h1 {
   color: whitesmoke;
   font-size: 3.5rem;
   padding: 2% 10%;
+}
+body .content footer {
+  padding: 2% 0;
+  text-align: center;
+  background: #2f4454;
+  color: whitesmoke;
+}
+body .content footer p {
+  font-size: 1.4rem;
 }
 .hide-navigation {
   display: none;
