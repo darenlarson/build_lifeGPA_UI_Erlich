@@ -77,6 +77,7 @@ body header .navigation {
 }
 @media (max-width: 500px) {
   body header .navigation {
+    margin-left: 10%;
     margin-top: 1%;
     flex-direction: column;
     align-items: flex-start;
@@ -102,8 +103,10 @@ body header .navigation nav {
 }
 @media (max-width: 500px) {
   body header .navigation nav {
+    width: 40%;
     font-size: 1.5rem;
     border-top: 1px solid white;
+    padding-left: 0;
   }
 }
 body header .navigation nav a {
@@ -121,7 +124,13 @@ body header .navigation nav button {
 }
 @media (max-width: 500px) {
   body header .navigation nav button {
+    margin-left: 110%;
     font-size: 1.4rem;
+  }
+}
+@media (max-width: 400px) {
+  body header .navigation nav button {
+    margin-left: 25vw;
   }
 }
 body header .header-content {
@@ -179,6 +188,11 @@ body .content .members h1 {
   font-weight: bold;
   margin-bottom: 1%;
 }
+@media (max-width: 500px) {
+  body .content .members h1 {
+    font-size: 4rem;
+  }
+}
 body .content .members .member {
   text-align: center;
   width: 22%;
@@ -191,18 +205,15 @@ body .content .members .member {
 }
 @media (max-width: 500px) {
   body .content .members .member {
-    width: 40%;
+    width: 60%;
+    padding: 2% 0;
   }
 }
 body .content .members .member img {
-  height: 150px;
+  height: 200px;
+  border-radius: 15px;
   width: auto;
   margin-bottom: 5%;
-}
-@media (max-width: 500px) {
-  body .content .members .member img {
-    height: 70px;
-  }
 }
 body .content .members .member h1 {
   font-size: 3rem;
@@ -211,7 +222,7 @@ body .content .members .member h1 {
 }
 @media (max-width: 500px) {
   body .content .members .member h1 {
-    font-size: 4rem;
+    font-size: 3rem;
   }
 }
 @media (max-width: 500px) {
