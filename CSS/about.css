@@ -111,6 +111,8 @@ body header .navigation nav {
 }
 body header .navigation nav a {
   margin-right: 10%;
+  text-decoration: none;
+  color: white;
 }
 body header .navigation nav button {
   margin-left: 20%;
