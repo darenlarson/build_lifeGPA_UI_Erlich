@@ -60,7 +60,10 @@ body header {
 }
 @media (max-width: 500px) {
   body header {
-    background-image: url("../assets/headerImage.jpg");
+    width: auto;
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
   }
 }
 body header .navigation {
@@ -72,9 +75,22 @@ body header .navigation {
   margin: 0 10%;
   color: white;
 }
+@media (max-width: 500px) {
+  body header .navigation {
+    margin-top: 1%;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+  }
+}
 body header .navigation h1 {
   font-size: 3rem;
   color: #da7b93;
+}
+@media (max-width: 500px) {
+  body header .navigation h1 {
+    font-size: 2.5rem;
+  }
 }
 body header .navigation nav {
   width: 50%;
@@ -83,11 +99,17 @@ body header .navigation nav {
   align-items: center;
   font-size: 1.8rem;
 }
+@media (max-width: 500px) {
+  body header .navigation nav {
+    font-size: 1.5rem;
+    border-top: 1px solid white;
+  }
+}
 body header .navigation nav a {
   margin-right: 10%;
 }
 body header .navigation nav button {
-  margin-left: 15%;
+  margin-left: 35%;
   border-radius: 6px;
   border: 2px solid white;
   background-color: inherit;
@@ -95,6 +117,11 @@ body header .navigation nav button {
   font-size: 1.6rem;
   height: 32px;
   color: white;
+}
+@media (max-width: 500px) {
+  body header .navigation nav button {
+    font-size: 1.4rem;
+  }
 }
 body header .header-content {
   font-weight: bold;
@@ -106,10 +133,25 @@ body header .header-content {
   align-items: flex-start;
   flex-direction: column;
 }
+@media (max-width: 500px) {
+  body header .header-content {
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 10%;
+  }
+}
 body header .header-content h1 {
+  font-weight: bold;
   font-size: 8rem;
   padding-top: 4%;
   padding-bottom: 2%;
+}
+@media (max-width: 500px) {
+  body header .header-content h1 {
+    font-size: 6.5rem;
+    text-align: center;
+    padding-bottom: 10%;
+  }
 }
 body header .header-content button {
   border-radius: 15px;
@@ -127,7 +169,7 @@ body .content {
   width: 100%;
 }
 body .content .achievements {
-  padding-top: 5%;
+  padding-top: 3%;
   padding-bottom: 5%;
   width: 100%;
   display: flex;
@@ -136,23 +178,52 @@ body .content .achievements {
   justify-content: center;
   background: #da7b93;
 }
+body .content .achievements h1 {
+  width: 100%;
+  font-size: 5rem;
+  margin-left: 8%;
+  font-weight: bold;
+  margin-bottom: 1%;
+}
 body .content .achievements .achievement {
   text-align: center;
   line-height: 0.25;
   width: 18%;
-  border: 2px solid black;
+  border: 3px solid black;
   border-radius: 5px;
   margin: 2%;
   padding: 1% 0;
   color: black;
   margin-bottom: 2%;
 }
+@media (max-width: 500px) {
+  body .content .achievements .achievement {
+    width: 40%;
+  }
+}
 body .content .achievements .achievement img {
   height: 90px;
   width: auto;
 }
+@media (max-width: 500px) {
+  body .content .achievements .achievement img {
+    height: 70px;
+  }
+}
 body .content .achievements .achievement h1 {
   font-size: 5rem;
+  margin-left: 0;
+  margin-bottom: 0;
+}
+@media (max-width: 500px) {
+  body .content .achievements .achievement h1 {
+    font-size: 4rem;
+  }
+}
+@media (max-width: 500px) {
+  body .content .achievements .achievement h2 {
+    font-size: 1.6rem;
+  }
 }
 body .content .how-it-works {
   display: flex;
@@ -161,19 +232,43 @@ body .content .how-it-works {
   padding: 5% 0;
   background: whitesmoke;
 }
+@media (max-width: 500px) {
+  body .content .how-it-works {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
 body .content .how-it-works .hiw-left {
-  width: 50%;
+  width: 40%;
   display: flex;
   align-items: center;
   justify-content: center;
-  border-right: 3px dotted black;
+  border-right: 5px dotted black;
   color: black;
 }
+@media (max-width: 500px) {
+  body .content .how-it-works .hiw-left {
+    border-right: none;
+    border-bottom: 3px dotted black;
+    width: 85%;
+    justify-content: flex-start;
+  }
+}
 body .content .how-it-works .hiw-left h1 {
-  width: 50%;
+  width: 60%;
   font-size: 7rem;
   padding-left: 10%;
   line-height: 1;
+  font-weight: bold;
+}
+@media (max-width: 500px) {
+  body .content .how-it-works .hiw-left h1 {
+    width: 100%;
+    font-size: 4rem;
+    padding-left: 0;
+    padding-bottom: 3%;
+  }
 }
 body .content .how-it-works .hiw-right {
   width: 50%;
@@ -182,12 +277,27 @@ body .content .how-it-works .hiw-right {
   justify-content: center;
   color: black;
 }
+@media (max-width: 500px) {
+  body .content .how-it-works .hiw-right {
+    width: 85%;
+    margin-top: 3%;
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+}
 body .content .how-it-works .hiw-right ol {
-  width: 50%;
+  width: 80%;
   display: flex;
   align-content: center;
   flex-direction: column;
-  font-size: 2rem;
+  font-size: 3rem;
+}
+@media (max-width: 500px) {
+  body .content .how-it-works .hiw-right ol {
+    font-size: 2rem;
+    align-items: flex-start;
+    width: 100%;
+  }
 }
 body .content .phrase {
   background-image: url("../assets/champion.jpg");
@@ -196,11 +306,28 @@ body .content .phrase {
   height: 100vh;
   width: 100%;
 }
+@media (max-width: 500px) {
+  body .content .phrase {
+    width: auto;
+    display: flex;
+    justify-content: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+}
 body .content .phrase h1 {
   width: 70%;
   color: whitesmoke;
   font-size: 3.5rem;
   padding: 2% 10%;
+}
+@media (max-width: 500px) {
+  body .content .phrase h1 {
+    width: 85%;
+    font-size: 2rem;
+    text-align: center;
+    margin-top: 5%;
+  }
 }
 body .content footer {
   padding: 2% 0;
@@ -487,5 +614,282 @@ body .content footer p {
     -webkit-transform: translateX(0);
     transform: translateX(0);
     opacity: 1;
+  }
+}
+.flicker-in-1 {
+  -webkit-animation: flicker-in-1 3s linear both;
+  animation: flicker-in-1 3s linear both;
+}
+/* ----------------------------------------------
+ * Generated by Animista on 2019-4-15 17:7:38
+ * w: http://animista.net, t: @cssanimista
+ * ---------------------------------------------- */
+/**
+ * ----------------------------------------
+ * @animation flicker-in-1
+ * ----------------------------------------
+ */
+@-webkit-keyframes flicker-in-1 {
+  0% {
+    opacity: 0;
+  }
+  10% {
+    opacity: 0;
+  }
+  10.1% {
+    opacity: 1;
+  }
+  10.2% {
+    opacity: 0;
+  }
+  20% {
+    opacity: 0;
+  }
+  20.1% {
+    opacity: 1;
+  }
+  20.6% {
+    opacity: 0;
+  }
+  30% {
+    opacity: 0;
+  }
+  30.1% {
+    opacity: 1;
+  }
+  30.5% {
+    opacity: 1;
+  }
+  30.6% {
+    opacity: 0;
+  }
+  45% {
+    opacity: 0;
+  }
+  45.1% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 1;
+  }
+  55% {
+    opacity: 1;
+  }
+  55.1% {
+    opacity: 0;
+  }
+  57% {
+    opacity: 0;
+  }
+  57.1% {
+    opacity: 1;
+  }
+  60% {
+    opacity: 1;
+  }
+  60.1% {
+    opacity: 0;
+  }
+  65% {
+    opacity: 0;
+  }
+  65.1% {
+    opacity: 1;
+  }
+  75% {
+    opacity: 1;
+  }
+  75.1% {
+    opacity: 0;
+  }
+  77% {
+    opacity: 0;
+  }
+  77.1% {
+    opacity: 1;
+  }
+  85% {
+    opacity: 1;
+  }
+  85.1% {
+    opacity: 0;
+  }
+  86% {
+    opacity: 0;
+  }
+  86.1% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes flicker-in-1 {
+  0% {
+    opacity: 0;
+  }
+  10% {
+    opacity: 0;
+  }
+  10.1% {
+    opacity: 1;
+  }
+  10.2% {
+    opacity: 0;
+  }
+  20% {
+    opacity: 0;
+  }
+  20.1% {
+    opacity: 1;
+  }
+  20.6% {
+    opacity: 0;
+  }
+  30% {
+    opacity: 0;
+  }
+  30.1% {
+    opacity: 1;
+  }
+  30.5% {
+    opacity: 1;
+  }
+  30.6% {
+    opacity: 0;
+  }
+  45% {
+    opacity: 0;
+  }
+  45.1% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 1;
+  }
+  55% {
+    opacity: 1;
+  }
+  55.1% {
+    opacity: 0;
+  }
+  57% {
+    opacity: 0;
+  }
+  57.1% {
+    opacity: 1;
+  }
+  60% {
+    opacity: 1;
+  }
+  60.1% {
+    opacity: 0;
+  }
+  65% {
+    opacity: 0;
+  }
+  65.1% {
+    opacity: 1;
+  }
+  75% {
+    opacity: 1;
+  }
+  75.1% {
+    opacity: 0;
+  }
+  77% {
+    opacity: 0;
+  }
+  77.1% {
+    opacity: 1;
+  }
+  85% {
+    opacity: 1;
+  }
+  85.1% {
+    opacity: 0;
+  }
+  86% {
+    opacity: 0;
+  }
+  86.1% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.roll-in-right {
+  -webkit-animation: roll-in-right 0.6s ease-out both;
+  animation: roll-in-right 0.6s ease-out both;
+}
+/* ----------------------------------------------
+ * Generated by Animista on 2019-4-15 17:12:20
+ * w: http://animista.net, t: @cssanimista
+ * ---------------------------------------------- */
+/**
+ * ----------------------------------------
+ * animation roll-in-right
+ * ----------------------------------------
+ */
+@-webkit-keyframes roll-in-right {
+  0% {
+    -webkit-transform: translateX(800px) rotate(540deg);
+    transform: translateX(800px) rotate(540deg);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateX(0) rotate(0deg);
+    transform: translateX(0) rotate(0deg);
+    opacity: 1;
+  }
+}
+@keyframes roll-in-right {
+  0% {
+    -webkit-transform: translateX(800px) rotate(540deg);
+    transform: translateX(800px) rotate(540deg);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateX(0) rotate(0deg);
+    transform: translateX(0) rotate(0deg);
+    opacity: 1;
+  }
+}
+.shadow-drop-2-center {
+  -webkit-animation: shadow-drop-2-center 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation: shadow-drop-2-center 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+/* ----------------------------------------------
+ * Generated by Animista on 2019-4-15 17:37:32
+ * w: http://animista.net, t: @cssanimista
+ * ---------------------------------------------- */
+/**
+ * ----------------------------------------
+ * animation shadow-drop-2-center
+ * ----------------------------------------
+ */
+@-webkit-keyframes shadow-drop-2-center {
+  0% {
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+  }
+  100% {
+    -webkit-transform: translateZ(50px);
+    transform: translateZ(50px);
+    box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.35);
+  }
+}
+@keyframes shadow-drop-2-center {
+  0% {
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+  }
+  100% {
+    -webkit-transform: translateZ(50px);
+    transform: translateZ(50px);
+    box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.35);
   }
 }
