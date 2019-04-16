@@ -145,7 +145,7 @@ body header .header-content h1 {
   font-weight: bold;
   font-size: 8rem;
   padding-top: 4%;
-  padding-bottom: 2%;
+  padding-bottom: 1%;
 }
 @media (max-width: 500px) {
   body header .header-content h1 {
@@ -162,7 +162,7 @@ body .content {
   flex-direction: column;
   width: 100%;
 }
-body .content .achievements {
+body .content .members {
   padding-top: 3%;
   padding-bottom: 5%;
   width: 100%;
@@ -170,19 +170,18 @@ body .content .achievements {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
-  background: #da7b93;
+  background: white;
 }
-body .content .achievements h1 {
+body .content .members h1 {
   width: 100%;
   font-size: 5rem;
   margin-left: 8%;
   font-weight: bold;
   margin-bottom: 1%;
 }
-body .content .achievements .achievement {
+body .content .members .member {
   text-align: center;
-  line-height: 0.25;
-  width: 18%;
+  width: 22%;
   border: 3px solid black;
   border-radius: 5px;
   margin: 2%;
@@ -191,32 +190,33 @@ body .content .achievements .achievement {
   margin-bottom: 2%;
 }
 @media (max-width: 500px) {
-  body .content .achievements .achievement {
+  body .content .members .member {
     width: 40%;
   }
 }
-body .content .achievements .achievement img {
-  height: 90px;
+body .content .members .member img {
+  height: 150px;
   width: auto;
+  margin-bottom: 5%;
 }
 @media (max-width: 500px) {
-  body .content .achievements .achievement img {
+  body .content .members .member img {
     height: 70px;
   }
 }
-body .content .achievements .achievement h1 {
-  font-size: 5rem;
+body .content .members .member h1 {
+  font-size: 3rem;
   margin-left: 0;
-  margin-bottom: 0;
+  margin-bottom: 1%;
 }
 @media (max-width: 500px) {
-  body .content .achievements .achievement h1 {
+  body .content .members .member h1 {
     font-size: 4rem;
   }
 }
 @media (max-width: 500px) {
-  body .content .achievements .achievement h2 {
-    font-size: 1.6rem;
+  body .content .members .member h2 {
+    font-size: 1.5rem;
   }
 }
 body .content footer {
