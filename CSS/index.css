@@ -315,7 +315,8 @@ body .content .how-it-works .hiw-right ol {
   }
 }
 body .content .phrase {
-  background-image: url("../assets/champion.jpg");
+  background-image: url("../assets/phrase6.jpg");
+  background-position: center;
   background-size: 100% auto;
   background-repeat: no-repeat;
   height: 100vh;
