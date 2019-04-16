@@ -268,9 +268,11 @@ body {
       .hiw-right {
         width: 50%;
         display: flex;
-        align-items: center;
+        align-items: flex-start;
         justify-content: center;
         color: black;
+        flex-wrap: wrap;
+        margin-top: 2.5%;
 
         @media @phone {
           width: 85%;
@@ -279,17 +281,27 @@ body {
           justify-content: flex-start;
         }
 
-        ol {
-          width: 80%;
+        .step {
+          width: 30%;
           display: flex;
-          align-content: center;
           flex-direction: column;
-          font-size: 3rem;
+          align-items: center;
+          justify-content: flex-start;
+          margin-bottom: 5%;
 
-          @media @phone {
-            font-size: 2rem;
-            align-items: flex-start;
-            width: 100%;
+          img {
+            width: 75px;
+            height: auto;
+            margin-bottom: 5%;
+          }
+
+          .number {
+            width: 100px;
+            height: auto;
+          }
+
+          h2 {
+            text-align: center;
           }
         }
       }
