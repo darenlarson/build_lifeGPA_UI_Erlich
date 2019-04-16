@@ -111,6 +111,8 @@ body header .navigation nav {
 }
 body header .navigation nav a {
   margin-right: 10%;
+  text-decoration: none;
+  color: white;
 }
 body header .navigation nav button {
   margin-left: 20%;
@@ -194,6 +196,7 @@ body .content .achievements h1 {
   margin-left: 8%;
   font-weight: bold;
   margin-bottom: 1%;
+  color: black;
 }
 @media (max-width: 500px) {
   body .content .achievements h1 {
@@ -321,6 +324,12 @@ body .content .phrase {
   background-repeat: no-repeat;
   height: 100vh;
   width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+  padding-bottom: 2%;
 }
 @media (max-width: 500px) {
   body .content .phrase {
@@ -329,21 +338,46 @@ body .content .phrase {
     justify-content: center;
     background-size: cover;
     background-repeat: no-repeat;
+    padding-bottom: 5%;
   }
 }
 body .content .phrase h1 {
-  width: 70%;
-  color: whitesmoke;
-  font-size: 3.5rem;
+  width: 80%;
+  color: white;
+  font-size: 6rem;
+  font-weight: bold;
   padding: 2% 10%;
+  text-align: center;
 }
 @media (max-width: 500px) {
   body .content .phrase h1 {
     width: 85%;
-    font-size: 2rem;
+    font-size: 4rem;
     text-align: center;
     margin-top: 5%;
   }
+}
+body .content .phrase h2 {
+  color: white;
+  text-align: center;
+  margin-bottom: 2%;
+}
+@media (max-width: 500px) {
+  body .content .phrase h2 {
+    width: 85%;
+    margin-bottom: 5%;
+  }
+}
+body .content .phrase button {
+  border-radius: 15px;
+  border: 2px solid #da7b93;
+  background-color: #da7b93;
+  padding: 0 40px;
+  font-size: 2.5rem;
+  height: 50px;
+  color: black;
+  font-weight: bold;
+  width: auto;
 }
 body .content footer {
   padding: 2% 0;
