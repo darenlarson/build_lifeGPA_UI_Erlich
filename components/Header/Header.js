@@ -1,7 +1,7 @@
 const title = document.querySelector(".header-content h1");
 const headerBtn = document.querySelector(".header-content button");
 
-const timeTitle = 500;
+const timeTitle = 950;
 
 window.addEventListener("load", event => {
     if(mobile.matches) {
@@ -15,6 +15,6 @@ window.addEventListener("load", event => {
     if(mobile.matches) {
         headerBtn.classList.replace("hide-header", "show-navigation");
     } else {
-        setTimeout(() => headerBtn.classList.replace("hide-header", "roll-in-right"), timeTitle + 1200)
+        setTimeout(() => headerBtn.classList.replace("hide-header", "roll-in-right"), timeTitle + 1100)
     }
 })

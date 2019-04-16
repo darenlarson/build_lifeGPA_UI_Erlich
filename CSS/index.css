@@ -98,6 +98,7 @@ body header .navigation nav {
   justify-content: flex-start;
   align-items: center;
   font-size: 1.8rem;
+  padding-left: 15%;
 }
 @media (max-width: 500px) {
   body header .navigation nav {
@@ -109,7 +110,7 @@ body header .navigation nav a {
   margin-right: 10%;
 }
 body header .navigation nav button {
-  margin-left: 35%;
+  margin-left: 20%;
   border-radius: 6px;
   border: 2px solid white;
   background-color: inherit;
@@ -337,6 +338,10 @@ body .content footer {
 }
 body .content footer p {
   font-size: 1.4rem;
+}
+.about-header {
+  background-image: url("../assets/about.jpg");
+  align-content: center;
 }
 .hide-navigation {
   display: none;

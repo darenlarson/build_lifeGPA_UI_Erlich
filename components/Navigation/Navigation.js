@@ -1,17 +1,16 @@
 const logo = document.querySelector(".navigation h1");
 const home = document.querySelector("#home");
 const about = document.querySelector("#about");
-const contact = document.querySelector("#contact");
 const login = document.querySelector("#login");
 const mobile = window.matchMedia("(max-width: 500px)");
 
-const timeHome = 1000;
+const timeHome = 1300;
 
 window.addEventListener("load", event => {
     if(mobile.matches) {
         logo.classList.replace("hide-navigation", "show-navigation");
     } else {
-        logo.classList.replace("hide-navigation", "fade-in-top");
+        setTimeout(() => logo.classList.replace("hide-navigation", "fade-in-top"), 300)
     }
 })
 
@@ -33,16 +32,8 @@ window.addEventListener("load", event => {
 
 window.addEventListener("load", event => {
     if(mobile.matches) {
-        contact.classList.replace("hide-navigation", "show-navigation");
-    } else {
-        setTimeout(() => contact.classList.replace("hide-navigation", "fade-in-left"), timeHome + 400)   
-    }
-})
-
-window.addEventListener("load", event => {
-    if(mobile.matches) {
         login.classList.replace("hide-navigation", "show-navigation");
     } else {
-        setTimeout(() => login.classList.replace("hide-navigation", "fade-in-left"), timeHome + 600)   
+        setTimeout(() => login.classList.replace("hide-navigation", "fade-in-left"), timeHome + 400)   
     }
 })
