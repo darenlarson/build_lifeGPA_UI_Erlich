@@ -2,7 +2,7 @@ const logo = document.querySelector(".navigation h1");
 const home = document.querySelector("#home");
 const about = document.querySelector("#about");
 const login = document.querySelector("#login");
-const mobile = window.matchMedia("(max-width: 500px)");
+const mobile = window.matchMedia("(max-width: 975px)");
 
 const timeHome = 1300;
 

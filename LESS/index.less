@@ -33,7 +33,7 @@ body {
 
     @media @phone {
       //background-image: url("../assets/header-phone.jpg");
-      width: auto;
+      width: 100vw;
       height: 100vh;
       background-size: cover;
       background-repeat: no-repeat;
@@ -97,8 +97,24 @@ body {
           color: white;
 
           @media @phone {
-            margin-left: 30vw;
+            margin-left: 55vw;
             font-size: 1.4rem;
+          }
+
+          @media (max-width: 800px) {
+            margin-left: 50vw;
+          }
+
+          @media (max-width: 650px) {
+            margin-left: 45vw;
+          }
+
+          @media (max-width: 575px) {
+            margin-left: 40vw;
+          }
+
+          @media (max-width: 500px) {
+            margin-left: 35vw;
           }
 
           @media (max-width: 400px) {
@@ -183,6 +199,7 @@ body {
         color: black;
 
         @media @phone {
+          margin-right: 1%;
           font-size: 4rem;
         }
 
@@ -439,8 +456,6 @@ body {
 @import './components/Navigation/Navigation';
 @import './components/Header/Header';
 @import './components/Achievement/Achievement';
-@import './components/Howitworks/Howitworks';
-
 
 // Ojo: importar los componentes aca.
 // @import './components/TopBar/TopBar';
